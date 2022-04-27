@@ -26,3 +26,7 @@ WHERE (dados_basicos).nome = 'Carla';
 
 SELECT * FROM public.professores
 WHERE (dados_basicos).sobrenome = 'Souza';
+
+SELECT * FROM public.professores
+WHERE (dados_basicos).sobrenome LIKE 'S%'
+ORDER BY (dados_basicos).nome;
